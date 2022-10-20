@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_integers - prints interger
+ * print_integer - prints interger
  * @arg: interger argument
  *
  * Return: total numbers of characters printed.
@@ -14,10 +14,11 @@ int print_integer(va_list arg)
 	int div;
 
 	n = va_arg(arg, int);
-
+	div = 1;
+	len = 0;
 	if (n < 0)
 	{
-		_putchar('-');
+		len += _putchar('-');
 		num = n * -1;
 	}
 	else

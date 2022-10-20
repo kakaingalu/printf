@@ -41,12 +41,11 @@ int finder(const char *format, identify func_list[], va_list arg)
 			}
 			i++;
 		}
-		else 
-                {
-                        _putchar(format[i]);
-                        total_chars++;
-                }
-	 }
-
+		else
+		{
+			_putchar(format[i]);
+			total_chars++;
+		}
+	}
 	return (total_chars);
 }

@@ -12,6 +12,16 @@ int _printf(const char *format, ...)
 identify func_list[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"%", print_percent},
+		{"i", print_integer},
+		{"d", print_integer},
+		/*{"b", print_binary},
+		{"r", print_reversed},
+		{"R", rot13},
+		{"u", unsigned_integer},
+		{"o", print_octal},
+		{"x", print_hex},
+		{"X", print_hex},*/
 		{NULL, NULL}
 	};
 	va_list arg;

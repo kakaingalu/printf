@@ -15,10 +15,9 @@ identify func_list[] = {
 		{"%", print_percent},
 		{"i", print_integer},
 		{"d", print_integer},
-		{NULL, NULL}
-
-		/**
-		 * {"b", print_binary},
+		{"b", print_binary},
+		{NULL,NULL}
+		 /**
 		 * {"r", print_reversed},
 		 * {"R", rot13},
 		 * {"u", unsigned_integer},
